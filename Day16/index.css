@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #265e9d;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #111;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+    left: auto;
+  
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: #265e9d;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: start;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ff0000;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 90vh;
+
+    background-image: url(./img/spreitolol.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    }
+    
+  .work {
+    grid-area: 4 / 2 / 5 / 3;
+    /* background-color: red; */
+    text-align: center;
+    color: #265e9d;
+    text-shadow: -1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;
+    }
+  .inventory {
+    grid-area: 3 / 3 / 4 / 4;
+    /* background-color: blue; */
+    text-align: end;
+    color: #265e9d;
+    text-shadow: -1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;
+  }
+  .bed {
+    grid-area: 4 / 7 / 5 / 8;
+    /* background-color: yellow; */
+    text-align: start;
+    color: #265e9d;
+    text-shadow: -1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;
+    }
+
