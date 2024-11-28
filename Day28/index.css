@@ -1,0 +1,73 @@
+
+@keyframes smooth-appear {
+    to {
+        bottom: 20px;
+        opacity: 1;
+    }
+}
+
+* {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.menu {
+        display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+}
+
+.user-menu {
+    text-align: end;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+}
+
+.card {
+        padding: 10px;
+        background-color: #f1f1f1;
+        margin-top: 15px;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+        height: 250px;
+
+        bottom: -100%;
+        opacity: 0;
+        border-radius: 10px;
+        animation: smooth-appear 1s ease forwards; 
+}
+
+.card img {
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rarity-Common {
+    color: cornflowerblue;
+}
+
+.rarity-Uncommon {
+    color: #a05fba;
+
+}
+.rarity-Rare {
+    color: #fff533;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.rarity-Epic {
+    font-weight: 800;
+    text-shadow: 2px 2px 5px #F3FEB8;
+    background: linear-gradient(#FF4C4C, #FFB22C, #FFDE4D, #FA4032);
+    background-clip: text;
+    color: transparent;
+}
