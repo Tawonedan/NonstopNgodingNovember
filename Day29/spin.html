@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprei Gratis</title>
+
+    <link rel="stylesheet" href="./asset/css/spin.css">
+
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="./asset/css/docs.theme.min.css">
+
+    <link rel="stylesheet" href="./asset/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./asset/css/owl.theme.default.min.css">
+
+    <!-- javascript -->
+    <script src="./asset/js/jquery.min.js"></script>
+    <script src="./asset/js/owl.carousel.js"></script>
+
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="index.html">Your Room</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="spin.html">Spin</a></li>
+            <li style="float:right">  <div class="dropdown">
+                <button class="dropbtn">YN</button>
+                <div class="dropdown-content">
+                  <a href="#">About you</a>
+                  <a href="#">Lemari</a>
+                  <a href="#">Take a walk ></a>
+                </div>
+              </div> </li>
+          </ul>
+      </header>
+
+    <section id="demos">
+        <div class="row">
+          <div class="large-12 columns">
+            <div class="owl-carousel owl-theme">
+              <div class="item" style="height:500px">
+                <button>Grant 1X</button> <button>Grant 10X</button>
+              </div>
+              <div class="item" style="height:500px">
+                <button>Grant 1X</button> <button>Grant 10X</button>
+              </div>
+              <div class="item" style="height:500px">
+                <button>Grant 1X</button> <button>Grant 10X</button>
+              </div>
+            </div>
+
+            <script>
+            $(document).ready(function() {
+              $('.owl-carousel').owlCarousel({
+                items: 1,
+                margin: 10,
+                autoHeight: true
+              });
+            })
+            </script>
+          </div>
+        </div>
+      </section>
+
+
+</body>
+</html>
